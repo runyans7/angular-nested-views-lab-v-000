@@ -38,16 +38,24 @@
         td {
             padding: 16px 12px 14px;
         }
+
+        .active {
+          color: green;
+        }
     </style>
 </head>
 <body>
 
 <div ng-app="app" class="app">
+
+<a href="#" ui-sref="home.user" ui-sref-active="active">User Info</a>
+<a href="#" ui-sref="home.notifications" ui-sref-active="active">Your Notifications</a>
+<a href="#" ui-sref="home.timeline" ui-sref-active="active">Your Timeline</a>
     <div ui-view></div>
 </div>
 
 <script src="js/angular.js"></script>
-<script src="js/angular-route.js"></script>
+<script src="js/angular-ui-router.js"></script>
 <script src="js/app/app.js"></script>
 
 </body>
